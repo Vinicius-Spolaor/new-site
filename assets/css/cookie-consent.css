@@ -1,0 +1,45 @@
+/* Cookie Consent Banner Styles */
+.cookie-consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483647 !important; /* Garante que fica acima de tudo */
+  background: rgba(20,20,20,0.98);
+  color: #fff;
+  padding: 18px 16px 16px 16px;
+  font-size: 1rem;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.cookie-consent button {
+  background: #0c5adb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.cookie-consent button:hover {
+  background: #094aaf;
+}
+@media (max-width: 600px) {
+  .cookie-consent {
+    font-size: 0.95rem;
+    padding: 14px 6px 12px 6px;
+  }
+  .cookie-consent button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+#scrollUp {
+  z-index: 2147483646 !important;
+}

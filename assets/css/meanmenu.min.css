@@ -1,0 +1,369 @@
+a.meanmenu-reveal{display:none}
+.mean-container .mean-bar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 60px;
+    z-index: 99999;
+    background: #0762f8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.mean-container a.meanmenu-reveal{width:22px;height:22px;padding:18px;top:0;right:0;cursor:pointer;color:#fff;text-decoration:none;font-size:16px;text-indent:-9999em;line-height:22px;font-size:1px;display:block;font-family:Arial,Helvetica,sans-serif;font-weight:700;float: right;}
+.mean-container a.meanmenu-reveal span{display:block;background:#fff;height:3px;margin-top:3px}
+.mean-container .mean-nav{float:left;width:100%;background:#0c1923}
+.mean-container .mean-nav ul {padding: 0;margin: 0;width: 100%;list-style-type: none;}
+.mean-container .mean-nav ul li ul li ul {
+    display: inherit !important;
+}
+.mean-container .mean-nav ul li {
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid#ddd;
+}
+.mean-container .mean-nav ul li a {
+	background: #f8f8f8 none repeat scroll 0 0;
+	color: #666666;
+	display: block;
+	float: left;
+	font-size: 14px;
+	margin: 0;
+	padding: 1em 5%;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 90%;
+	font-weight: bold;
+}
+.mobile-menu-area {
+  background: #262626;
+}
+.mean-container .mean-nav ul li li a {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 0.75;
+  padding: 1em 10%;
+  text-shadow: none !important;
+  visibility: visible;
+  width: 80%;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #444;
+}
+.mean-container .mean-nav ul li.mean-last a{border-bottom:0;margin-bottom:0}
+.mean-container .mean-nav ul li li li a{width:70%;padding:1em 15%}
+.mean-container .mean-nav ul li li li li a{width:60%;padding:1em 20%}
+.mean-container .mean-nav ul li li li li li a{width:50%;padding:1em 25%}
+.mean-container .mean-nav ul li a:hover {
+  background: #f8f8f8 none repeat scroll 0 0;
+  color: #F47E1E;
+}
+.mean-container .mean-nav ul li a.mean-expand{
+	width:26px;
+	height: 15px;
+  margin-top: 1px;
+  padding: 12px !important;
+	text-align:center;
+	position:absolute;
+	right:0;top:0;
+	z-index:2;
+	font-weight:700;
+	background:rgba(255,255,255,.1);
+	border:0!important;
+	background: #F8F8F8;
+	}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  background: #f8f8f8;
+}
+.mean-container .mean-push{float:left;width:100%;padding:0;margin:0;clear:both}
+.mean-nav .wrapper{width:100%;padding:0;margin:0}
+.mean-container .mean-bar,.mean-container .mean-bar *{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.mean-remove{display:none!important}
+.mean-container .mean-bar::after {
+  color: #ffffff;
+  content: "MENU";
+  font-size: 21px;
+  left: 5%;
+  position: absolute;
+  top: 12px;
+}
+
+
+/* -------------------------------
+39. Mobile menu
+----------------------------------*/
+.mean-container .mean-bar::after {
+  display: none;
+}
+.mean-container .mean-nav ul li a:hover {
+	color: #0762f8;
+	border-radius: 0;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #fff;
+}
+.mobile-menu-area {
+  background: #fff none repeat scroll 0 0;
+}
+.mean-container .mean-nav ul li a {
+  background: #fff;
+  color: #444;
+  display: block;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  background: none;
+  padding-right: 20px !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  background: none;
+}
+.mean-container .mean-nav ul li {
+  background: #444;
+}
+.mean-container .mean-nav ul li li a {
+  color: #151948;
+  opacity: .90;
+  border-top: 0;
+}
+.mean-container a.meanmenu-reveal {
+  color: #fff;
+}
+.meanmenu-reveal.meanclose:hover {
+  color: #fff !important;
+}
+.mean-container a.meanmenu-reveal:hover span {
+  background: #fff;
+}
+.mean-container .mean-bar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 120px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100001;
+}
+
+/* MENU MOBILE EM TELA CHEIA */
+.mean-container .mean-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 60px 0px 20px; /* espaço pro topo e pro conteúdo */
+  display: none; /* começa fechado */
+  flex-direction: column;
+  box-sizing: border-box !important;
+}
+
+body.mean-menu-lock {
+  position: fixed !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.mean-container .mean-nav ul {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.mean-container .mean-bar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #0762f8;
+  z-index: 10000;
+}
+
+/* Mostra o botão "X" de fechar o menu */
+.meanmenu-reveal.meanclose {
+  z-index: 10001 !important;
+  color: white !important;
+  font-size: 26px !important;
+  text-indent: 0 !important;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+/* Submenus começam sempre ocultos */
+.mean-container .mean-nav ul ul {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  max-height: 0;
+  transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.5s, visibility 0.5s;
+}
+
+/* Submenus abertos via classe ativada pelo JS */
+.mean-container .mean-nav ul ul.mean-open {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  max-height: 1000px;
+  overflow: visible;
+  transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.5s, visibility 0.5s;
+}
+
+/* --- MELHORIA VISUAL DO MENU MOBILE DBAONLINE --- */
+.mean-container .mean-nav ul {
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+.mean-container .mean-nav ul li {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+.mean-container .mean-nav ul li:last-child {
+  border-bottom: none;
+}
+.mean-container .mean-nav ul li > a:not(.mean-expand) {
+  display: block;
+  padding: 18px 52px 18px 18px;
+  color: #222;
+  font-size: 1.08em;
+  text-decoration: none;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 0;
+  transition: background 0.2s, color 0.2s;
+}
+.mean-container .mean-nav ul li > a:not(.mean-expand):hover {
+  background: #f5f7fa;
+  color: #0762f8;
+}
+.mean-container .mean-expand {
+  float: right;
+  margin-right: 18px;
+  color: #0762f8;
+  font-weight: bold;
+  font-size: 1.3em !important;
+  background: none !important;
+  border: none !important;
+  transition: color 0.2s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mean-expand.mean-expand-anim {
+  color: #0762f8;
+  background: none !important;
+  border-radius: 0;
+  transition: background 0.2s, color 0.2s;
+}
+.mean-container .mean-nav ul ul {
+  background: #f5f7fa;
+  width: 100vw !important;
+  min-width: 100vw !important;
+  left: 50%;
+  right: 0;
+  transform: translateX(-50%);
+  position: relative;
+  box-sizing: border-box;
+}
+.mean-container .mean-nav ul ul li > a:not(.mean-expand) {
+  padding-left: 40px;
+  font-size: 1em;
+  color: #444;
+  background: #f5f7fa;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mean-container .mean-nav ul ul li > a:not(.mean-expand):hover {
+  color: #0762f8;
+  background: #e9f0fb;
+}
+
+/* Adiciona botão 'Fale Conosco' fixo no rodapé do menu mobile */
+@media (max-width: 990px) {
+  .mobile-menu-area .mobile-fale-fixo {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 220px;
+    max-width: 90vw;
+    text-align: center;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+  .mobile-menu-area .mobile-fale-fixo .dtbtn {
+    pointer-events: auto;
+  }
+  .mobile-menu-area .mean-nav > ul {
+    padding-bottom: 100px !important;
+    font-size: 0.95em;
+  }
+  .mobile-menu-area .mobile-social-icons {
+    position: fixed;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    margin-bottom: 0 !important;
+    gap: 18px !important;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+  }
+  .mobile-menu-area .mobile-social-icons {
+    margin-bottom: -5px !important;
+    gap: 30px !important;
+  }
+  .mobile-menu-area .mobile-social-icons a {
+    margin-bottom: 0 !important;
+  }
+  .mobile-menu-area .mean-nav ul li > a:not(.mean-expand) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 1em;
+  }
+}
+
+/* Adicionando CSS para garantir que nenhum item do menu mobile fique visualmente destacado */
+.mean-container .mean-nav ul li.selected > a,
+.mean-container .mean-nav ul li > a:focus,
+.mean-container .mean-nav ul li > a:active {
+  background: none !important;
+  color: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
