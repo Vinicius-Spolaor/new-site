@@ -732,14 +732,14 @@ a.cart:after {
 --<	Techno Slider Area Css -->
 ======================================================*/
 .slider1 {
-  background-image: url(assets/images/slider/slider-1.png);
+  background-image: url(assets/images/slider/site_grande1.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 900px;
 }
 .slider2 {
-  background-image: url(assets/images/slider/slider-2.png);
+  background-image: url(assets/images/slider/site_grande2.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

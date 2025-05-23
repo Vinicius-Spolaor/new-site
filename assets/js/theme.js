@@ -57,6 +57,7 @@
     setTimeout(function () {
       document.documentElement.style.overflow = "visible";
       document.body.style.overflow = "visible";
+      document.body.style.overflowX = "hidden";
     }, 1500);
   });
 

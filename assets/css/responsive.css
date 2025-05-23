@@ -12,6 +12,15 @@
   }
 }
 
+@media (min-width: 1300px) and (max-width: 1500px) {
+   #section-quote .container-pe-quote.right {
+    display: none;
+  }
+  #section-quote .container-pe-quote.left {
+    display: none;
+  }
+}
+
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
   a.dtbtn {
@@ -751,6 +760,12 @@
 
   .call-do-content h2 {
     font-size: 40px;
+  }
+   #section-quote .container-pe-quote.right {
+    display: none;
+  }
+  #section-quote .container-pe-quote.left {
+    display: none;
   }
 }
 
